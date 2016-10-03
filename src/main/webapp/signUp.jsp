@@ -5,13 +5,14 @@
 <head>
     <title><c:out value="${i42}"/></title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/center.css">
 </head>
 <body>
 <jsp:directive.include file="locale.jsp" />
-<div align="left"><jsp:include page="notLogged.jsp"/></div>
+<jsp:include page="notLogged.jsp"/>
 <jsp:useBean id="countryList" class="com.etu3892.db.mysql.MySQLCountriesDAO" scope="application"/>
 <jsp:useBean id="teamList" class="com.etu3892.db.mysql.MySQLTeamsDAO" scope="application"/>
-<div class="forma mail">
+<div class="center">
     <form action="sportncountry" method="post">
         <label ><c:out value="${i43}"/></label><br>
         <input type="text" name="name" value="${name}"><b><c:out value="${Error1}"/></b><br>

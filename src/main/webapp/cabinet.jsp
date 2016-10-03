@@ -4,11 +4,15 @@
 <html>
 <head>
     <title><c:out value="${i1}"/></title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div id="container">
 <jsp:directive.include file="locale.jsp" />
-<div align="left"> <jsp:include page="menu.jsp"/></div>
-<div align="center">
+<jsp:include page="menu.jsp"/>
+    <div id="maincont">
+        <div id="mainleft">
+            <h2></h2>
 <form action="updateprofile" method="post">
     <label><c:out value="${i2}"/></label><br>
     <input type="text" name="username" value="${username}"/><br>
@@ -22,8 +26,9 @@
 
     <input type="submit" value="Update"/><br>
     <c:out value="${message}"/>
-</form>
-
+</form> </div>
+        <div id="mainright">
+            <h2></h2>
     <c:out value="${i6}"/>: ${teamname} <br>
     <c:out value="${i7}"/>:<br>
     <jsp:useBean id="sportList" class="com.etu3892.db.mysql.MySQLSportsDAO" scope="application"/>
@@ -45,6 +50,9 @@
         </select><br>
         <input type="submit" value="<c:out value="${i12}"/>">
     </form>
+            </div>
+        <div id="bottom"></div>
+</div>
 </div>
 </body>
 </html>

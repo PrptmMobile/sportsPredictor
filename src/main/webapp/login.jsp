@@ -4,19 +4,19 @@
 <html>
 <head>
     <title><c:out value="${i19}"/></title>
+    <link rel="stylesheet" href="css/center.css">
 </head>
 <body>
 <jsp:directive.include file="locale.jsp" />
-<div align="left"><jsp:include page="notLogged.jsp"/></div>
-<link rel="stylesheet" href="css/center.css">
+<jsp:include page="notLogged.jsp"/>
 <div class="center">
 <form action="login" method="post">
-    <label ><c:out value="${i20}"/></label><br>
+    <label >login</label><br>
     <input type="text" name="name"><br>
     <label ><c:out value="${i21}"/></label><br>
     <input type="password" name="password"><br>
 
-    <input type="submit" value="Log in"><br>
+    <input type="submit" value="<c:out value="${i20}"/>"><br>
     <b><c:out value="${Error}"/></b><br>
 </form>
 
@@ -24,7 +24,7 @@
     <label ><c:out value="${i22}"/></label><br>
     <input type="text" name="email"><br>
 
-    <input type="submit" value="Send"><br>
+    <input type="submit" value=">>>"><br>
     <b><c:out value="${ErrorPswd}"/></b><br>
 </form>
 </div>
