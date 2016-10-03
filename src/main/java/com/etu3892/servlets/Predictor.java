@@ -34,7 +34,7 @@ public class Predictor extends HttpServlet {
         req.setAttribute("name",league.getLeague());
         req.setAttribute("matches",matches);
         req.setAttribute("predicts",predicts);
-        getServletContext().getRequestDispatcher("/predict.jsp").include(req,resp);
+        getServletContext().getRequestDispatcher("/predict.jsp").forward(req,resp);
     }
 
     @Override

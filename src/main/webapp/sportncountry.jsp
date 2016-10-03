@@ -3,10 +3,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Your favourite club</title>
+    <title><c:out value="${i49}"/></title>
 </head>
 <body>
-<h2>Choose the kind of sport & country</h2>
+<jsp:directive.include file="locale.jsp" />
+<h2><c:out value="${i50}"/></h2>
 <jsp:useBean id="sportList" class="com.etu3892.db.mysql.MySQLSportsDAO" scope="application"/>
 <jsp:useBean id="countryList" class="com.etu3892.db.mysql.MySQLCountriesDAO" scope="application"/>
 <form action="teamselect" method="post">
@@ -23,9 +24,9 @@
         <option value="${country.getCountryId()}"><c:out value="${country.getCountry()}"/></option>
     </c:forEach>
     </select><br>
-    <input type="submit" value="Choose team">
+    <input type="submit" value="<c:out value="${i51}"/>">
 </form>
 <br>
-<a href="index" >I don`t have favourite team</a>
+<a href="index" ><c:out value="${i52}"/></a>
 </body>
 </html>

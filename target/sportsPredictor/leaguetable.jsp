@@ -3,9 +3,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>League Table</title>
+    <title><c:out value="${i17}"/></title>
 </head>
 <body>
+<jsp:directive.include file="locale.jsp" />
 <jsp:useBean id="leaguesList" class="com.etu3892.db.mysql.MySQLLeagueDAO" scope="application"/>
 <jsp:useBean id="now" class="java.util.Date" />
 <jsp:include page="menu.jsp"/>
@@ -30,7 +31,7 @@
     <table border="1">
         <tr>
         <th>Team</th>
-        <th>P</th>
+        <th>PLD</th>
         <th>GS</th>
         <th>GC</th>
         <th>PTS</th>
@@ -46,7 +47,7 @@
         </c:forEach>
     </table>
     <br>
-    <h3>Results</h3>
+    <h3><c:out value="${i18}"/></h3>
     <c:set var="matches" value="${matches}"/>
     <c:forEach var="match" items="${matches}">
         <c:out value="${match.getDatetime().toString()}"/>  <c:out value="${match.getHome().getTeam()}"/> - <c:out value="${match.getAway().getTeam()}"/>    <c:out value="${match.getHomeGls()}"/>:<c:out value="${match.getAwayGls()}"/><br>

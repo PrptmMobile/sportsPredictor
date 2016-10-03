@@ -3,24 +3,25 @@
 <%@ page isELIgnored="false" %>
 <html>
 <head>
-    <title>Register</title>
+    <title><c:out value="${i42}"/></title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
+<jsp:directive.include file="locale.jsp" />
 <div align="left"><jsp:include page="notLogged.jsp"/></div>
 <jsp:useBean id="countryList" class="com.etu3892.db.mysql.MySQLCountriesDAO" scope="application"/>
 <jsp:useBean id="teamList" class="com.etu3892.db.mysql.MySQLTeamsDAO" scope="application"/>
 <div class="forma mail">
     <form action="sportncountry" method="post">
-        <label >Login</label><br>
+        <label ><c:out value="${i43}"/></label><br>
         <input type="text" name="name" value="${name}"><b><c:out value="${Error1}"/></b><br>
-        <label >Password</label><br>
+        <label ><c:out value="${i44}"/></label><br>
         <input type="password" name="password"><br>
-        <label >Password again</label><br>
+        <label ><c:out value="${i45}"/></label><br>
         <input type="password" name="passwordagain"><b><c:out value="${Error2}"/></b><br><br>
-        <label >E-mail</label><br>
+        <label ><c:out value="${i46}"/></label><br>
         <input type="text" name="email" value="${email}"><b><c:out value="${Error3}"/></b><br><br>
-        <label >Choose your country</label><br>
+        <label ><c:out value="${i47}"/></label><br>
         <c:set var="countries" value="${countryList.countries}" />
         <select name="country">
             <c:forEach var="country" items="${countries}">
@@ -28,7 +29,7 @@
             </c:forEach>
         </select><br>
 
-            <input type="submit" value="Регистрация"><br>
+            <input type="submit" value="<c:out value="${i48}"/>"><br>
         <br>
     </form>
 </div>

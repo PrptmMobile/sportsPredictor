@@ -38,6 +38,6 @@ public class Ratings extends HttpServlet {
         req.setAttribute("name",name);
         req.setAttribute("ratings",ratings);
         req.setAttribute("predicts",predicts);
-        getServletContext().getRequestDispatcher("/ratings.jsp").include(req,resp);
+        getServletContext().getRequestDispatcher("/ratings.jsp").forward(req,resp);
     }
 }

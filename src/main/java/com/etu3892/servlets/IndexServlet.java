@@ -15,7 +15,7 @@ public class IndexServlet extends HttpServlet{
         if(username!=null) var="/loggedIn.jsp";
         else var="/notLogged.jsp";
 
-        getServletContext().getRequestDispatcher(var).include(request, response);
+        getServletContext().getRequestDispatcher(var).forward(request, response);
     }
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

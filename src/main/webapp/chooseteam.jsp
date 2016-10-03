@@ -3,10 +3,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Choose team!</title>
+    <title><c:out value="${i10}"/></title>
 </head>
 <body>
-<h2>Choose your team! (You may change it on your profile page)</h2>
+<jsp:directive.include file="locale.jsp" />
+<h2><c:out value="${i11}"/></h2>
 <form action="endreg" method="post">
     <input type="hidden" name="username" value="${username}">
     <c:set var="teams" value="${teamList}" />
@@ -17,9 +18,9 @@
     </select><br>
 
 
-    <input type="submit" value="Confirm">
+    <input type="submit" value="<c:out value="${i12}"/>">
 </form>
 
-<a href="signUp.jsp" >I`m sure I have no ideas about my favourite team</a>
+<a href="signUp.jsp" ><c:out value="${i13}"/></a>
 </body>
 </html>

@@ -3,9 +3,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Ratings</title>
+    <title><c:out value="${i37}"/></title>
 </head>
 <body>
+<jsp:directive.include file="locale.jsp" />
 <jsp:useBean id="leaguesList" class="com.etu3892.db.mysql.MySQLLeagueDAO" scope="application"/>
 <jsp:useBean id="now" class="java.util.Date" />
 <jsp:include page="menu.jsp"/>
@@ -29,9 +30,9 @@
     <c:set var="ratings" value="${ratings}"/>
     <table border="1">
         <tr>
-            <th>User</th>
-            <th>Points</th>
-            <th>Scores</th>
+            <th><c:out value="${i38}"/></th>
+            <th><c:out value="${i39}"/></th>
+            <th><c:out value="${i40}"/></th>
         </tr>
         <c:forEach var="part" items="${ratings}">
             <tr>
@@ -43,7 +44,7 @@
     </table>
     <br>
 
-    <h3>Your previous predicts</h3>
+    <h3><c:out value="${i41}"/></h3>
     <table >
         <c:set var="predicts" value="${predicts}"/>
         <c:forEach var="predict" items="${predicts}">

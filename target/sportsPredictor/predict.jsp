@@ -3,9 +3,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Predicts</title>
+    <title><c:out value="${i30}"/></title>
 </head>
 <body>
+<jsp:directive.include file="locale.jsp" />
 <jsp:useBean id="leaguesList" class="com.etu3892.db.mysql.MySQLLeagueDAO" scope="application"/>
 <jsp:include page="menu.jsp"/>
 <br><br><br><br>
@@ -14,14 +15,14 @@
 <a href="predict?id=${league.getLeagueId()}"><c:out value="${league.getLeague()}"/></a> |
     </c:forEach> <br><br><br>
     <c:if test="${name ne 'None'}">
-    <h3>Predicts for <c:out value="${name}"/></h3>
+    <h3><c:out value="${i31}"/> <c:out value="${name}"/></h3>
 
     <table border="1">
         <tr>
-            <th>Date of match</th>
-            <th>Home</th>
-            <th>Away</th>
-            <th colspan="2">Your predict</th>
+            <th><c:out value="${i32}"/></th>
+            <th><c:out value="${i33}"/></th>
+            <th><c:out value="${i34}"/></th>
+            <th colspan="2"><c:out value="${i35}"/></th>
             <th>ok</th>
         </tr>
         <c:set var="matches" value="${matches}"/>
@@ -41,7 +42,7 @@
         </c:forEach>
     </table>
     <br><br>
-        <h3>Current predictions</h3>
+        <h3><c:out value="${i36}"/></h3>
         <table >
             <c:set var="predicts" value="${predicts}"/>
             <c:forEach var="predict" items="${predicts}">

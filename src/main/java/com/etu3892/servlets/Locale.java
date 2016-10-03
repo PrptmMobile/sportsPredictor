@@ -6,13 +6,16 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebServlet("/logout")
-public class LogOut extends HttpServlet{
-    @Override
+@WebServlet("/locale")
+public class Locale extends HttpServlet{
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getSession().invalidate();
+        HttpSession session = req.getSession();
+        String lang = req.getParameter("lang");
+        if (lang != null) session.setAttribute("language", lang);
+        else session.setAttribute("language", "default");
         req.getRequestDispatcher("/index").forward(req,resp);
     }
 }

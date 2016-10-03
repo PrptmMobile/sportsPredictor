@@ -34,6 +34,6 @@ public class League extends HttpServlet {
         req.setAttribute("table",table);
         req.setAttribute("name",name);
         req.setAttribute("matches",matches);
-        getServletContext().getRequestDispatcher("/leaguetable.jsp").include(req,resp);
+        getServletContext().getRequestDispatcher("/leaguetable.jsp").forward(req,resp);
     }
 }
