@@ -34,8 +34,8 @@ public class DBConnector {
             Class.forName(DRIVER);
             connection = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
             started = true;
-        } catch (Exception exc) {
-            //Logger.getLogger(exc.getMessage());
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }
