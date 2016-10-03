@@ -1,7 +1,7 @@
 package com.etu3892.servlets;
 
 
-import com.etu3892.db.UserRepositury;
+import com.etu3892.db.mysql.MySQLUserDAO;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -25,7 +25,7 @@ public class LoginServlet extends HttpServlet{
         String password = request.getParameter("password");
         String access = "Unknown username";
         try {
-            access = UserRepositury.checkUser(username,password);
+            access = MySQLUserDAO.checkUser(username,password);
         } catch (SQLException e) {
             e.printStackTrace();
         }

@@ -1,8 +1,8 @@
 package com.etu3892.servlets.adminservlets;
 
 
-import com.etu3892.db.TeamPartRepository;
-import com.etu3892.db.UserRepositury;
+import com.etu3892.db.mysql.MySQLTeamPartDAO;
+import com.etu3892.db.mysql.MySQLTeamsDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,13 +20,17 @@ public class PartServlet extends HttpServlet{
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         List roster = new ArrayList();
+        List teams = new ArrayList();
         try {
-            roster = TeamPartRepository.getLeagueRoster(id);
+            roster = MySQLTeamPartDAO.getLeagueRoster(id);
+            teams = MySQLTeamsDAO.getTeams();
         } catch (SQLException e) {
             e.printStackTrace();
         }
         request.setAttribute("roster",roster);
+        request.setAttribute("teams",teams);
         request.setAttribute("name",request.getParameter("name"));
+        request.setAttribute("id",request.getParameter("id"));
         getServletContext().getRequestDispatcher("/tables/edit/participants.jsp").forward(request, response);
     }
     @Override

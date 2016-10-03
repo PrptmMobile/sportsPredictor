@@ -1,7 +1,7 @@
 package com.etu3892.servlets;
 
 
-import com.etu3892.db.Entities.User;
+import com.etu3892.db.entities.User;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
-import com.etu3892.db.UserRepositury;
+import com.etu3892.db.mysql.MySQLUserDAO;
 import com.etu3892.functional.EmailChecker;
 
 @WebServlet("/sportncountry")
@@ -31,14 +31,14 @@ public class SelectServlet extends HttpServlet {
         try {
 
             pswdch = !pswd.equals(pswdagn);
-            inuse = UserRepositury.findUserByUserName(request.getParameter("name")) != null;
+            inuse = MySQLUserDAO.findUserByUserName(request.getParameter("name")) != null;
             emailch = !EmailChecker.validate(request.getParameter("email"));
-            emailused = UserRepositury.findUserByEmail(request.getParameter("email")) != null;
+            emailused = MySQLUserDAO.findUserByEmail(request.getParameter("email")) != null;
         } catch (SQLException e) {
             e.printStackTrace();
         }
         int countryId = Integer.parseInt(request.getParameter("country"));
-        User user = new User(0, request.getParameter("name"), request.getParameter("password"), countryId, 3, request.getParameter("email"));
+        User user = new User(0, request.getParameter("name"), request.getParameter("password"), 5, countryId, request.getParameter("email"));
         if (pswdch || inuse || emailch || emailused) {
             request.setAttribute("name", request.getParameter("name"));
             request.setAttribute("email",request.getParameter("email"));
@@ -52,7 +52,7 @@ public class SelectServlet extends HttpServlet {
         } else {
 
            try {
-               UserRepositury.createUser(user);
+               MySQLUserDAO.createUser(user);
            } catch (SQLException e) {
            }
            request.setAttribute("username", user.getUsername());

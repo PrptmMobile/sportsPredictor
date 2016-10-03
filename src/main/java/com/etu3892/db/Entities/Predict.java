@@ -1,21 +1,33 @@
-package com.etu3892.db.Entities;
+package com.etu3892.db.entities;
 
 
 public class Predict {
     private int predictId;
-    private int matchId;
-    private int userId;
+    private Match match;
+    private User user;
     private int homePr;
-    private int awatPr;
+    private int awayPr;
     private int points;
 
-    public Predict(int predictId, int matchId, int userId, int homePr, int awatPr, int points) {
+    public Predict(int predictId, Match match, User user, int homePr, int awayPr, int points) {
         this.predictId = predictId;
-        this.matchId = matchId;
-        this.userId = userId;
+        this.match= match;
+        this.user = user;
         this.homePr = homePr;
-        this.awatPr = awatPr;
+        this.awayPr = awayPr;
         this.points = points;
+    }
+
+    public Predict(int predictId, Match match, User user, int homePr, int awayPr) {
+        this.predictId = predictId;
+        this.match = match;
+        this.user = user;
+        this.homePr = homePr;
+        this.awayPr = awayPr;
+    }
+
+    public Predict(int predictId) {
+        this.predictId = predictId;
     }
 
     public int getPredictId() {
@@ -26,20 +38,20 @@ public class Predict {
         this.predictId = predictId;
     }
 
-    public int getMatchId() {
-        return matchId;
+    public Match getMatch() {
+        return match;
     }
 
-    public void setMatchId(int matchId) {
-        this.matchId = matchId;
+    public void setMatch(Match match) {
+        this.match = match;
     }
 
-    public int getUserId() {
-        return userId;
+    public User getUser() {
+        return user;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public int getHomePr() {
@@ -50,12 +62,12 @@ public class Predict {
         this.homePr = homePr;
     }
 
-    public int getAwatPr() {
-        return awatPr;
+    public int getAwayPr() {
+        return awayPr;
     }
 
-    public void setAwatPr(int awatPr) {
-        this.awatPr = awatPr;
+    public void setAwayPr(int awayPr) {
+        this.awayPr = awayPr;
     }
 
     public int getPoints() {

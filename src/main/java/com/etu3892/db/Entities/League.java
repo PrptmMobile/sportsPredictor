@@ -1,17 +1,21 @@
-package com.etu3892.db.Entities;
+package com.etu3892.db.entities;
 
 
 public class League {
     private int leagueId;
     private String league;
-    private int countryId;
-    private int sportId;
+    private Country country;
+    private Sport sport;
 
-    public League(int leagueId, String league, int countryId, int sportId) {
+    public League(int leagueId, String league, Country country, Sport sport) {
         this.leagueId = leagueId;
         this.league = league;
-        this.countryId = countryId;
-        this.sportId = sportId;
+        this.country = country;
+        this.sport = sport;
+    }
+
+    public League(int leagueId) {
+        this.leagueId = leagueId;
     }
 
     public int getLeagueId() {
@@ -30,19 +34,19 @@ public class League {
         this.league = league;
     }
 
-    public int getCountryId() {
-        return countryId;
+    public Country getCountry() {
+        return country;
     }
 
-    public void setCountryId(int countryId) {
-        this.countryId = countryId;
+    public void setCountry(Country country) {
+        this.country = country;
     }
 
-    public int getSportId() {
-        return sportId;
+    public Sport getSport() {
+        return sport;
     }
 
-    public void setSportId(int sportId) {
-        this.sportId = sportId;
+    public void setSport(Sport sport) {
+        this.sport = sport;
     }
 }

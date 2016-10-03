@@ -1,8 +1,6 @@
-package com.etu3892.db.Entities;
+package com.etu3892.db.entities;
 
-/**
- * Created by Artemka on 17.09.2016.
- */
+
 public class Team {
     private int teamId;
     private String team;

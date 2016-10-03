@@ -1,24 +1,45 @@
-package com.etu3892.db.Entities;
+package com.etu3892.db.entities;
 
+
+import com.etu3892.functional.SportsDateTime;
 
 import java.sql.Timestamp;
 
 public class Match {
     private int matchId;
-    private int homeId;
-    private int awayId;
+    private Team home;
+    private Team away;
     private int homeGls;
     private int awayGls;
-    private int leagueId;
-    private Timestamp datetime;
+    private League league;
+    private SportsDateTime datetime;
 
-    public Match(int matchId, int homeId, int awayId, int homeGls, int awayGls, int leagueId, Timestamp datetime) {
+    public Match(int matchId, Team home, Team away, int homeGls, int awayGls, League league, SportsDateTime datetime) {
         this.matchId = matchId;
-        this.homeId = homeId;
-        this.awayId = awayId;
+        this.home = home;
+        this.away = away;
         this.homeGls = homeGls;
         this.awayGls = awayGls;
-        this.leagueId = leagueId;
+        this.league = league;
+        this.datetime = datetime;
+    }
+
+    public Match(int matchId, Team home, Team away, League league, SportsDateTime datetime) {
+        this.matchId = matchId;
+        this.home = home;
+        this.away = away;
+        this.league = league;
+        this.datetime = datetime;
+    }
+
+    public Match(int matchId) {
+        this.matchId = matchId;
+    }
+
+    public Match(int matchId, int homeGls, int awayGls, SportsDateTime datetime) {
+        this.matchId = matchId;
+        this.homeGls = homeGls;
+        this.awayGls = awayGls;
         this.datetime = datetime;
     }
 
@@ -30,20 +51,20 @@ public class Match {
         this.matchId = matchId;
     }
 
-    public int getHomeId() {
-        return homeId;
+    public Team getHome() {
+        return home;
     }
 
-    public void setHomeId(int homeId) {
-        this.homeId = homeId;
+    public void setHome(Team home) {
+        this.home = home;
     }
 
-    public int getAwayId() {
-        return awayId;
+    public Team getAway() {
+        return away;
     }
 
-    public void setAwayId(int awayId) {
-        this.awayId = awayId;
+    public void setAway(Team away) {
+        this.away = away;
     }
 
     public int getHomeGls() {
@@ -62,19 +83,19 @@ public class Match {
         this.awayGls = awayGls;
     }
 
-    public int getLeagueId() {
-        return leagueId;
+    public League getLeague() {
+        return league;
     }
 
-    public void setLeagueId(int leagueId) {
-        this.leagueId = leagueId;
+    public void setLeague(League league) {
+        this.league = league;
     }
 
     public Timestamp getDatetime() {
         return datetime;
     }
 
-    public void setDatetime(Timestamp datetime) {
+    public void setDatetime(SportsDateTime datetime) {
         this.datetime = datetime;
     }
 }

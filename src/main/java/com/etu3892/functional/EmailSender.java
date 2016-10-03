@@ -1,7 +1,7 @@
 package com.etu3892.functional;
 
 
-import com.etu3892.db.Entities.User;
+import com.etu3892.db.entities.User;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;

@@ -1,8 +1,6 @@
 package com.etu3892.servlets.adminservlets;
 
-import com.etu3892.db.CountriesRepository;
-import com.etu3892.db.SportsRepository;
-import com.etu3892.db.UserRepositury;
+import com.etu3892.db.mysql.MySQLUserDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,7 +9,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.List;
 
 @WebServlet("/administrator")
 public class AdminPanel extends HttpServlet {
@@ -21,7 +18,7 @@ public class AdminPanel extends HttpServlet {
         Boolean isadmin = false;
 
         try {
-            isadmin = UserRepositury.isAdmin(UserRepositury.findUserByUserName(username));
+            isadmin = MySQLUserDAO.isAdmin(MySQLUserDAO.findUserByUserName(username));
         } catch (SQLException e) {
             e.printStackTrace();
         }

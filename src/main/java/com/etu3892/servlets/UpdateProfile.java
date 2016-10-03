@@ -1,9 +1,8 @@
 package com.etu3892.servlets;
 
 
-import com.etu3892.db.Entities.User;
-import com.etu3892.db.TeamsRepository;
-import com.etu3892.db.UserRepositury;
+import com.etu3892.db.entities.User;
+import com.etu3892.db.mysql.MySQLUserDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -26,12 +25,12 @@ public class UpdateProfile extends HttpServlet{
         String newmail =  request.getParameter("email");
         String pswd = request.getParameter("pswd");
         try {
-            user= UserRepositury.findUserByUserName(username);
+            user= MySQLUserDAO.findUserByUserName(username);
             if (pswd.equals(user.getPassword())){
                 user.setUsername(newname);
                 user.setEmail(newmail);
                 if(newpswd!="")user.setPassword(newpswd);
-                UserRepositury.updateUser(user);
+                MySQLUserDAO.updateUser(user);
                 message = "Profile updated!";
             } else {
                 message = "Incorrect password!";

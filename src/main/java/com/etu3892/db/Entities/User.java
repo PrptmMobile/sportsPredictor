@@ -1,4 +1,4 @@
-package com.etu3892.db.Entities;
+package com.etu3892.db.entities;
 
 
 public class User {

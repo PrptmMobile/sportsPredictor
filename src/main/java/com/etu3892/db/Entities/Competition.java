@@ -1,20 +1,22 @@
-package com.etu3892.db.Entities;
+package com.etu3892.db.entities;
 
 
 public class Competition {
     private int competitionId;
-    private int leagueId;
-    private int userId;
+    private League league;
+    private User user;
     private int points;
     private int scores;
 
-    public Competition(int competitionId, int leagueId, int userId, int points, int scores) {
+    public Competition(int competitionId, League leagueId, User userId, int points, int scores) {
         this.competitionId = competitionId;
-        this.leagueId = leagueId;
-        this.userId = userId;
+        this.league = leagueId;
+        this.user = userId;
         this.points = points;
         this.scores = scores;
     }
+
+
 
     public int getCompetitionId() {
         return competitionId;
@@ -24,20 +26,20 @@ public class Competition {
         this.competitionId = competitionId;
     }
 
-    public int getLeagueId() {
-        return leagueId;
+    public League getLeague() {
+        return league;
     }
 
-    public void setLeagueId(int leagueId) {
-        this.leagueId = leagueId;
+    public void setLeague(League leagueId) {
+        this.league = leagueId;
     }
 
-    public int getUserId() {
-        return userId;
+    public User getUser() {
+        return user;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setUser(User userId) {
+        this.user = userId;
     }
 
     public int getPoints() {

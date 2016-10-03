@@ -1,7 +1,7 @@
 package com.etu3892.servlets;
 
-import com.etu3892.db.*;
-import com.etu3892.db.Entities.User;
+import com.etu3892.db.entities.User;
+import com.etu3892.db.mysql.MySQLUserDAO;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -12,10 +12,7 @@ import java.sql.SQLException;
 
 @WebServlet("/endreg")
 public class SignupServlet extends HttpServlet{
-    @Override
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request,response);
-    }
+
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -23,9 +20,9 @@ public class SignupServlet extends HttpServlet{
         String username = request.getParameter("username");
         int teamId = Integer.parseInt(request.getParameter("team"));
         try {
-            user = UserRepositury.findUserByUserName(username);
+            user = MySQLUserDAO.findUserByUserName(username);
             user.setTeamId(teamId);
-            UserRepositury.updateUser(user);
+            MySQLUserDAO.updateUser(user);
         } catch (SQLException e) {
             e.printStackTrace();
         }

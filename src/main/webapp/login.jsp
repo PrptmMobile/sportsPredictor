@@ -20,7 +20,7 @@
 </form>
 
 <form action="sendpassword" method="post">
-    <label >Forgot your password? Type your email and we will send it to you/</label><br>
+    <label >Forgot your password? Type your email and we will send it to you.</label><br>
     <input type="text" name="email"><br>
 
     <input type="submit" value="Send"><br>

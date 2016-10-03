@@ -8,15 +8,15 @@
 </head>
 <body>
 <div align="left"><jsp:include page="notLogged.jsp"/></div>
-<jsp:useBean id="countryList" class="com.etu3892.db.CountriesRepository" scope="application"/>
-<jsp:useBean id="teamList" class="com.etu3892.db.TeamsRepository" scope="application"/>
+<jsp:useBean id="countryList" class="com.etu3892.db.mysql.MySQLCountriesDAO" scope="application"/>
+<jsp:useBean id="teamList" class="com.etu3892.db.mysql.MySQLTeamsDAO" scope="application"/>
 <div class="forma mail">
     <form action="sportncountry" method="post">
         <label >Login</label><br>
         <input type="text" name="name" value="${name}"><b><c:out value="${Error1}"/></b><br>
         <label >Password</label><br>
         <input type="password" name="password"><br>
-        <label >Password again</label><br>
+        <label >Password (again)</label><br>
         <input type="password" name="passwordagain"><b><c:out value="${Error2}"/></b><br><br>
         <label >E-mail</label><br>
         <input type="text" name="email" value="${email}"><b><c:out value="${Error3}"/></b><br><br>
@@ -28,7 +28,7 @@
             </c:forEach>
         </select><br>
 
-            <input type="submit" value="Регистрация"><br>
+            <input type="submit" value="Sign up"><br>
         <br>
     </form>
 </div>

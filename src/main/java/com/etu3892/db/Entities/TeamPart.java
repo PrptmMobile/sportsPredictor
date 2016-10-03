@@ -1,24 +1,50 @@
-package com.etu3892.db.Entities;
+package com.etu3892.db.entities;
 
 
 
 public class TeamPart {
     private int teampartId;
-    private int leagueId;
-    private int teamId;
+    private League league;
+    private Team team;
+    private int pld;
     private int gs;
     private int gc;
     private int pts;
 
 
 
-    public TeamPart(int teampartId, int leagueId, int teamId, int gs, int gc, int pts) {
+    public TeamPart(int teampartId, League league, Team team, int pld, int gs, int gc, int pts) {
         this.teampartId = teampartId;
-        this.leagueId = leagueId;
-        this.teamId = teamId;
+        this.league = league;
+        this.team = team;
+        this.pld = pld;
         this.gs = gs;
         this.gc = gc;
         this.pts = pts;
+    }
+
+    public TeamPart(int teampartId) {
+        this.teampartId = teampartId;
+    }
+
+    public int getPld() {
+        return pld;
+    }
+
+    public void setPld(int pld) {
+        this.pld = pld;
+    }
+
+    public void setPts(int pts) {
+        this.pts = pts;
+    }
+
+    public TeamPart(int teampartId, League league, Team team, int pld) {
+        this.teampartId = teampartId;
+        this.league = league;
+        this.team = team;
+        this.pld = pld;
+
     }
 
     public int getTeampartId() {
@@ -29,20 +55,20 @@ public class TeamPart {
         this.teampartId = teampartId;
     }
 
-    public int getLeagueId() {
-        return leagueId;
+    public League getLeague() {
+        return league;
     }
 
-    public void setLeagueId(int leagueId) {
-        this.leagueId = leagueId;
+    public void setLeague(League league) {
+        this.league = league;
     }
 
-    public int getTeamId() {
-        return teamId;
+    public Team getTeam() {
+        return team;
     }
 
-    public void setTeamId(int teamId) {
-        this.teamId = teamId;
+    public void setTeam(Team team) {
+        this.team = team;
     }
 
     public int getGs() {

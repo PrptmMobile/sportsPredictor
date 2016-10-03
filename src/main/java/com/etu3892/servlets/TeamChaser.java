@@ -1,7 +1,7 @@
 package com.etu3892.servlets;
 
 
-import com.etu3892.db.TeamsRepository;
+import com.etu3892.db.mysql.MySQLTeamsDAO;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -27,7 +27,7 @@ public class TeamChaser extends HttpServlet{
         int sport = Integer.parseInt(request.getParameter("sports"));
         List teamsList = null;
         try {
-            teamsList = TeamsRepository.getTeamsBySportAndCountry(sport,country);
+            teamsList = MySQLTeamsDAO.getTeamsBySportAndCountry(sport,country);
         } catch (SQLException e) {
             e.printStackTrace();
         }

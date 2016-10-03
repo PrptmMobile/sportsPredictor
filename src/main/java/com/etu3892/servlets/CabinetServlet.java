@@ -1,8 +1,8 @@
 package com.etu3892.servlets;
 
-import com.etu3892.db.Entities.User;
-import com.etu3892.db.TeamsRepository;
-import com.etu3892.db.UserRepositury;
+import com.etu3892.db.entities.User;
+import com.etu3892.db.mysql.MySQLTeamsDAO;
+import com.etu3892.db.mysql.MySQLUserDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,8 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 @WebServlet("/cabinet")
 public class CabinetServlet extends HttpServlet{
@@ -22,10 +20,10 @@ public class CabinetServlet extends HttpServlet{
         String message = request.getParameter("message");
         User user = null;
         try {
-            user = UserRepositury.findUserByUserName(username);
+            user = MySQLUserDAO.findUserByUserName(username);
             request.setAttribute("username",user.getUsername());
             request.setAttribute("email",user.getEmail());
-            request.setAttribute("teamname", TeamsRepository.getTeamById(user.getTeamId()).getTeam());
+            request.setAttribute("teamname", MySQLTeamsDAO.getTeamById(user.getTeamId()).getTeam());
 
         } catch (SQLException e) {
             e.printStackTrace();

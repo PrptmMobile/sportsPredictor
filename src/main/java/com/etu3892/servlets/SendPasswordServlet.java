@@ -1,8 +1,8 @@
 package com.etu3892.servlets;
 
 
-import com.etu3892.db.Entities.User;
-import com.etu3892.db.UserRepositury;
+import com.etu3892.db.entities.User;
+import com.etu3892.db.mysql.MySQLUserDAO;
 import com.etu3892.functional.EmailSender;
 
 import javax.servlet.RequestDispatcher;
@@ -25,7 +25,7 @@ public class SendPasswordServlet extends HttpServlet{
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         User user = null;
         try {
-            user = UserRepositury.findUserByEmail(request.getParameter("email"));
+            user = MySQLUserDAO.findUserByEmail(request.getParameter("email"));
         } catch (SQLException e) {
             e.printStackTrace();
         }

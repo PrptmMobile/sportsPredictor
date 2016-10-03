@@ -1,9 +1,9 @@
 package com.etu3892.servlets.adminservlets;
 
-import com.etu3892.db.CountriesRepository;
-import com.etu3892.db.LeaguesRepository;
-import com.etu3892.db.SportsRepository;
-import com.etu3892.db.TeamsRepository;
+import com.etu3892.db.mysql.MySQLCountriesDAO;
+import com.etu3892.db.mysql.MySQLLeagueDAO;
+import com.etu3892.db.mysql.MySQLSportsDAO;
+import com.etu3892.db.mysql.MySQLTeamsDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -22,27 +22,27 @@ public class AdminPanelWorker extends HttpServlet{
         String page = "";
             try {
             switch (table)  {
-                case 0:List countries = CountriesRepository.getStCountries();
+                case 0:List countries = MySQLCountriesDAO.getStCountries();
                     request.setAttribute("countries",countries);
                     page = "/tables/countries.jsp";
                     break;
-                case 1:List sports = SportsRepository.getStSports();
+                case 1:List sports = MySQLSportsDAO.getStSports();
                     request.setAttribute("sports",sports);
                     page = "/tables/sports.jsp";
                     break;
-                case 2:List leagues = LeaguesRepository.getLeagues();
+                case 2:List leagues = MySQLLeagueDAO.getLeagues();
                     request.setAttribute("leagues",leagues);
-                    countries = CountriesRepository.getStCountries();
+                    countries = MySQLCountriesDAO.getStCountries();
                     request.setAttribute("countries",countries);
-                    sports = SportsRepository.getStSports();
+                    sports = MySQLSportsDAO.getStSports();
                     request.setAttribute("sports",sports);
                     page = "/tables/leagues.jsp";
                     break;
-                case 3:List teams = TeamsRepository.getTeams();
+                case 3:List teams = MySQLTeamsDAO.getTeams();
                     request.setAttribute("teams",teams);
-                    countries = CountriesRepository.getStCountries();
+                    countries = MySQLCountriesDAO.getStCountries();
                     request.setAttribute("countries",countries);
-                    sports = SportsRepository.getStSports();
+                    sports = MySQLSportsDAO.getStSports();
                     request.setAttribute("sports",sports);
                     page = "/tables/teams.jsp";
                     break;
