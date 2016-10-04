@@ -42,10 +42,11 @@ public class SelectServlet extends HttpServlet {
         if (pswdch || inuse || emailch || emailused) {
             request.setAttribute("name", request.getParameter("name"));
             request.setAttribute("email",request.getParameter("email"));
-            if(inuse) request.setAttribute("Error1", " Name already in use! ");
-            if(pswdch) request.setAttribute("Error2", " Passwords doesn`t match! ");
-            if(emailch) request.setAttribute("Error3", " Your e-mail is invalid!");
-            if(emailused) request.setAttribute("Error3", " E-mail already in use!");
+            String lang = (String) request.getSession().getAttribute("language");
+            if(inuse) request.setAttribute("Error1", lang.equals("ru") ? " Это имя уже используется! " : " Name already in use! ");
+            if(pswdch) request.setAttribute("Error2",lang.equals("ru") ? " Пароли не совпадают! " : " Passwords doesn`t match! ");
+            if(emailch) request.setAttribute("Error3",lang.equals("ru") ? " Введен неверный адрес эл. почты! " : " Your e-mail is invalid!");
+            if(emailused) request.setAttribute("Error3",lang.equals("ru") ? " Этот адрес эл. почты уже используется! " : " E-mail already in use!");
             RequestDispatcher requestDispatcher = request.getRequestDispatcher("/signUp.jsp");
             requestDispatcher.forward(request, response);
 
