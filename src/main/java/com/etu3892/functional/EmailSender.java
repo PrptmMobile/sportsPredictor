@@ -47,7 +47,7 @@ public class EmailSender {
     }
 
     public static void confirmRegistration(String to, String username){
-        EmailSender sender = new EmailSender("sp.noreply@ro.ru","amngr51");
+        EmailSender sender = new EmailSender("sp.noreply@ro.ru","*****");
         String message = "Congratulations, "+username+"!\n" + "And welcome to Sports Predictor!";
         sender.sendEmail("Registration successful",message, to);
     }
