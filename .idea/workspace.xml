@@ -1,168 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7e7441d-d97e-4663-98df-63d8ede93bc9" name="Default" comment="minor changes">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/db/entities/Competition.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/db/entities/Country.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/db/entities/League.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/db/entities/Match.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/db/entities/Predict.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/db/entities/Sport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/db/entities/Team.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/db/entities/TeamPart.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/db/entities/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/db/mysql/DBConnector.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/db/mysql/MySQLCompetDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/db/mysql/MySQLCountriesDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/db/mysql/MySQLLeagueDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/db/mysql/MySQLMatchDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/db/mysql/MySQLPredictDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/db/mysql/MySQLSportsDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/db/mysql/MySQLTeamPartDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/db/mysql/MySQLTeamsDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/db/mysql/MySQLUserDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/filters/AdminFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/filters/LoginFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/functional/EmailChecker.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/functional/EmailSender$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/functional/EmailSender.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/functional/Resulter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/functional/SportsDateTime.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/servlets/CabinetServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/servlets/IndexServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/servlets/League.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/servlets/Locale.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/servlets/LogOut.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/servlets/LoginServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/servlets/Predictor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/servlets/Ratings.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/servlets/SelectServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/servlets/SendPasswordServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/servlets/SignupServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/servlets/TeamChaser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/servlets/UpdateProfile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/servlets/adminservlets/AdminPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/servlets/adminservlets/AdminPanelWorker.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/servlets/adminservlets/CreateServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/servlets/adminservlets/MatchServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/servlets/adminservlets/PartServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/servlets/adminservlets/RemoveServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/servlets/adminservlets/ResultServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/servlets/adminservlets/UpdateServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/etu3892/tags/TimeTag.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cyr.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/en.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/403.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/db/entities/Competition.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/db/entities/Country.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/db/entities/League.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/db/entities/Match.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/db/entities/Predict.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/db/entities/Sport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/db/entities/Team.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/db/entities/TeamPart.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/db/entities/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/db/mysql/DBConnector.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/db/mysql/MySQLCompetDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/db/mysql/MySQLCountriesDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/db/mysql/MySQLLeagueDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/db/mysql/MySQLMatchDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/db/mysql/MySQLPredictDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/db/mysql/MySQLSportsDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/db/mysql/MySQLTeamPartDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/db/mysql/MySQLTeamsDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/db/mysql/MySQLUserDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/filters/AdminFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/filters/LoginFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/functional/EmailChecker.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/functional/EmailSender$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/functional/EmailSender.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/functional/Resulter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/functional/SportsDateTime.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/servlets/CabinetServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/servlets/IndexServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/servlets/League.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/servlets/Locale.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/servlets/LogOut.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/servlets/LoginServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/servlets/Predictor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/servlets/Ratings.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/servlets/SelectServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/servlets/SendPasswordServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/servlets/SignupServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/servlets/TeamChaser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/servlets/UpdateProfile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/servlets/adminservlets/AdminPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/servlets/adminservlets/AdminPanelWorker.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/servlets/adminservlets/CreateServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/servlets/adminservlets/MatchServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/servlets/adminservlets/PartServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/servlets/adminservlets/RemoveServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/servlets/adminservlets/ResultServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/servlets/adminservlets/UpdateServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/com/etu3892/tags/TimeTag.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/cyr.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/en.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/classes/ru.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/custom.tld" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/lib/activation-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/lib/jsp-api-2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/lib/mail-1.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/lib/mysql-connector-java-5.1.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/lib/servlet-api-2.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/adminpanel.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/cabinet.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/chooseteam.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/css/center.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/css/menu.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/denied.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/leaguetable.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/locale.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/loggedIn.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/login.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/menu.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/notLogged.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/predict.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/ratings.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/signUp.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/sportncountry.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/tables/countries.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/tables/edit/country.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/tables/edit/league.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/tables/edit/matches.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/tables/edit/participants.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/tables/edit/results.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/tables/edit/sport.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/tables/edit/team.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/tables/leagues.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/tables/sports.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/sportsPredictor/tables/teams.jsp" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/etu3892/db/Entities/Competition.java" afterPath="$PROJECT_DIR$/src/main/java/com/etu3892/db/entities/Competition.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/etu3892/db/Entities/Country.java" afterPath="$PROJECT_DIR$/src/main/java/com/etu3892/db/entities/Country.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/etu3892/db/Entities/League.java" afterPath="$PROJECT_DIR$/src/main/java/com/etu3892/db/entities/League.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/etu3892/db/Entities/Match.java" afterPath="$PROJECT_DIR$/src/main/java/com/etu3892/db/entities/Match.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/etu3892/db/Entities/Predict.java" afterPath="$PROJECT_DIR$/src/main/java/com/etu3892/db/entities/Predict.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/etu3892/db/Entities/Sport.java" afterPath="$PROJECT_DIR$/src/main/java/com/etu3892/db/entities/Sport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/etu3892/db/Entities/Team.java" afterPath="$PROJECT_DIR$/src/main/java/com/etu3892/db/entities/Team.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/etu3892/db/Entities/TeamPart.java" afterPath="$PROJECT_DIR$/src/main/java/com/etu3892/db/entities/TeamPart.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/etu3892/db/Entities/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/etu3892/db/entities/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="b7e7441d-d97e-4663-98df-63d8ede93bc9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sportsPredictor.iml" afterPath="$PROJECT_DIR$/sportsPredictor.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/etu3892/db/mysql/DBConnector.java" afterPath="$PROJECT_DIR$/src/main/java/com/etu3892/db/mysql/DBConnector.java" />
     </list>
     <ignored path="sportsPredictor.iws" />
@@ -185,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="75">
-      <file leaf-file-name="DBConnector.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DBConnector.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/etu3892/db/mysql/DBConnector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-260">
-              <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+            <state relative-caret-position="208">
+              <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -227,10 +67,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1056">
+            <state relative-caret-position="1118">
               <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
               <folding />
             </state>
@@ -365,10 +205,10 @@
         <option value="$PROJECT_DIR$/src/main/webapp/notLogged.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/etu3892/servlets/SelectServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/etu3892/db/mysql/MySQLUserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/etu3892/db/mysql/DBConnector.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/etu3892/filters/AdminFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/etu3892/filters/LoginFilter.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/etu3892/db/mysql/DBConnector.java" />
       </list>
     </option>
   </component>
@@ -1299,7 +1139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1475537820360</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated dependencies and plugins in the project. Added the possibility to run the application through embedded Apache Tomcat 7.">
+      <created>1495023151757</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1495023151757</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1316,6 +1163,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1331,7 +1179,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33295584" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26100966" sideWeight="0.49126637" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26100966" sideWeight="0.49126637" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1416,7 +1264,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor changes" />
+    <MESSAGE value="Updated dependencies and plugins in the project. Added the possibility to run the application through embedded Apache Tomcat 7." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated dependencies and plugins in the project. Added the possibility to run the application through embedded Apache Tomcat 7." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1686,14 +1535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/etu3892/db/mysql/DBConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-260">
-          <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/Filter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1806,8 +1647,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
+        <state relative-caret-position="1118">
           <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/etu3892/db/mysql/DBConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
           <folding />
         </state>
       </provider>
